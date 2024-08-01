@@ -97,6 +97,10 @@ Demonstrating how to use Nx + DevContainers to get going
 - `npx patch-package nx`
 - Add `"postinstall": "patch-package"` to `scripts` in `package.json`
 
+### Add Angular Material
+
+- `nx add @angular/material --project ui`
+
 ## Integrate with editors
 
 Enhance your Nx experience by installing [Nx Console](https://nx.dev/nx-console) for your favorite editor. Nx Console

@@ -19,7 +19,11 @@
       ],
       "settings": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[css]": {
+          "editor.defaultFormatter": "stylelint.vscode-stylelint"
+        },
+        "diffEditor.ignoreTrimWhitespace": false
       }
     }
   }
