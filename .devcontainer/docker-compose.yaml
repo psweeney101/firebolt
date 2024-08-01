@@ -1,0 +1,13 @@
+services:
+  devcontainer:
+    build: .
+    env_file: ../.env
+    volumes:
+      - ..:/workspace:cached
+      - ~/.ssh:/home/vscode/.ssh:ro
+    tty: true
+
+  mysql:
+    image: mysql
+    env_file: ../.env
+    restart: always
