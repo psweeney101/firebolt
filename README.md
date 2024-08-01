@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Firebolt</h1>
+  <h1>🔥 Firebolt ⚡️</h1>
   <img src="apps/ui/public/logo.png" height="75px" />
   <br />
   <strong>An example repo showing how to quickly get going with Nx in a DevContainer</strong>
@@ -39,6 +39,7 @@ Demonstrating how to use Nx + DevContainers to get going
    MYSQL_DATABASE = "firebolt"
    ```
 2. `npm install`
+3. `npm start`
 
 ## How I Got Here
 

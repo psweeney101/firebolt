@@ -1,5 +1,5 @@
 {
-  "name": "Firebolt",
+  "name": "🔥 Firebolt ⚡️",
   "dockerComposeFile": "docker-compose.yaml",
   "service": "devcontainer",
   "workspaceFolder": "/workspace",
@@ -11,10 +11,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "esbenp.prettier-vscode",
-        "github.vscode-github-actions",
-        "ms-azuretools.vscode-docker",
         "nrwl.angular-console",
+        "firsttris.vscode-jest-runner",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
         "stylelint.vscode-stylelint"
       ],
       "settings": {
