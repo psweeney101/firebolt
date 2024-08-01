@@ -41,7 +41,7 @@
             ],
             "pathGroups": [
               {
-                "pattern": "@baseline/**",
+                "pattern": "@firebolt/**",
                 "group": "internal",
                 "position": "before"
               }

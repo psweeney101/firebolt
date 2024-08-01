@@ -1,6 +1,29 @@
-# Baseline
+<div align="center">
+  <h1>Firebolt</h1>
+  <img src="apps/ui/public/logo.png" height="75px" />
+  <br />
+  <strong>An example repo showing how to quickly get going with Nx in a DevContainer</strong>
+  <br />
+  <br />
 
-A baseline NX + devcontainer repo
+<a href="https://angular.dev">![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)</a>
+<a href="https://www.docker.com">![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)</a>
+<a href="https://eslint.org">![ESLint](https://img.shields.io/badge/eslint-4B32C3?style=for-the-badge&logo=eslint)</a>
+<a href="https://jestjs.io">![Jest](https://img.shields.io/badge/jest-C21325?style=for-the-badge&logo=jest)</a>
+<a href="https://mysql.com">![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)</a>
+<a href="https://nestjs.com">![NestJS](https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs)</a>
+<a href="https://nodejs.org">![Node.js](https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)</a>
+<a href="https://nx.dev">![Nx](https://img.shields.io/badge/nx-143055?style=for-the-badge&logo=nx)</a>
+<a href="https://prettier.io">![Prettier](https://img.shields.io/badge/prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)</a>
+<a href="https://stylelint.io">![Stylelint](https://img.shields.io/badge/stylelint-000?style=for-the-badge&logo=stylelint&logoColor=white)</a>
+<a href="https://www.typescriptlang.org">![TypeScript](https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)</a>
+<br />
+<br />
+<a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/psweeney101/firebolt">![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)</a>
+
+</div>
+
+Demonstrating how to use Nx + DevContainers to get going
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -13,7 +36,7 @@ A baseline NX + devcontainer repo
    MYSQL_ROOT_PASSWORD = "root-password"
    MYSQL_USER = "mysql"
    MYSQL_PASSWORD = "password"
-   MYSQL_DATABASE = "baseline"
+   MYSQL_DATABASE = "firebolt"
    ```
 2. `npm install`
 
@@ -21,7 +44,7 @@ A baseline NX + devcontainer repo
 
 ### Bootstrap the Project
 
-- `npx create-nx-workspace baseline`
+- `npx create-nx-workspace firebolt`
   - Which stack do you want to use? `none`
   - Package-based monorepo, integrated monorepo, or standalone project? `integrated`
   - Which CI provider would you like to use? `skip`

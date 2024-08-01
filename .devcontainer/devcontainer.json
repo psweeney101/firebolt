@@ -1,5 +1,5 @@
 {
-  "name": "Baseline",
+  "name": "Firebolt",
   "dockerComposeFile": "docker-compose.yaml",
   "service": "devcontainer",
   "workspaceFolder": "/workspace",
