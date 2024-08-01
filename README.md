@@ -65,6 +65,15 @@ A baseline NX + devcontainer repo
 - Add `scripts` to `package.json`
 - Edit `.husky/pre-commit`
 
+### Add Patches
+
+[Nx daemon does not work in docker](https://github.com/nrwl/nx/issues/14126)
+
+- `npm i -D patch-package`
+- Remove `isDocker()` in `node_modules/nx/src/daemon/client/client.js`
+- `npx patch-package nx`
+- Add `"postinstall": "patch-package"` to `scripts` in `package.json`
+
 ## Integrate with editors
 
 Enhance your Nx experience by installing [Nx Console](https://nx.dev/nx-console) for your favorite editor. Nx Console

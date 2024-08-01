@@ -1,0 +1,13 @@
+diff --git a/node_modules/nx/src/daemon/client/client.js b/node_modules/nx/src/daemon/client/client.js
+index 7c537b2..3dc271f 100644
+--- a/node_modules/nx/src/daemon/client/client.js
++++ b/node_modules/nx/src/daemon/client/client.js
+@@ -68,7 +68,7 @@ class DaemonClient {
+             // CI=true,env=true => daemon
+             // WASM => no daemon because file watching does not work
+             if (((0, is_ci_1.isCI)() && env !== 'true') ||
+-                isDocker() ||
++                //isDocker() ||
+                 (0, tmp_dir_1.isDaemonDisabled)() ||
+                 nxJsonIsNotPresent() ||
+                 (useDaemonProcessOption === undefined && env === 'false') ||
