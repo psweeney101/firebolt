@@ -5,7 +5,8 @@
   "workspaceFolder": "/workspace",
   "postCreateCommand": ".devcontainer/post-create.sh",
   "features": {
-    "./features/mysql": {}
+    "./features/mysql": {},
+    "./features/node": {}
   },
   "customizations": {
     "vscode": {

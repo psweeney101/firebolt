@@ -1,0 +1,15 @@
+{
+  "id": "node",
+  "version": "1.0.0",
+  "name": "Node.js (via nvm)",
+  "documentationURL": "https://github.com/psweeney101/template/tree/main/.devcontainer/features/node",
+  "description": "Installs Node.js, nvm, and needed dependencies.",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": ["lts/*", "20", "18", "16", "14"],
+      "default": "lts/*",
+      "description": "Select or enter a Node.js version to install"
+    }
+  }
+}
