@@ -80,7 +80,6 @@ Demonstrating how to use Nx + DevContainers to get going
 - `nx generate nx-stylelint:configuration --project ui`
 - Edit `.eslintrc.json` and `stylelintrc.json`
 - `nx run-many --targets lint,stylelint,format --fix`
-- Edit `.eslintrc.json` and `->`npm run lint:fix`
 
 ### Add Husky
 
@@ -101,6 +100,8 @@ Demonstrating how to use Nx + DevContainers to get going
 ### Add Angular Material
 
 - `nx add @angular/material --project ui`
+- `npm install --save-dev material-icons`
+- Add `@import url('material-icons/iconfont/material-icons.css');` to `apps/ui/src/styles.css`
 
 ## Integrate with editors
 
