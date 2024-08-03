@@ -12,6 +12,7 @@
     "vscode": {
       "extensions": [
         "nrwl.angular-console",
+        "Angular.ng-template",
         "firsttris.vscode-jest-runner",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
@@ -19,14 +20,9 @@
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "[css]": {
-          "editor.defaultFormatter": "stylelint.vscode-stylelint"
-        },
         "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": [
-          "source.fixAll.eslint",
-          "source.fixAll.stylelint"
-        ],
+        "editor.codeActionsOnSave": ["source.fixAll"],
+        "stylelint.validate": ["css", "scss"],
         "diffEditor.ignoreTrimWhitespace": false
       }
     }

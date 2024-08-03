@@ -21,10 +21,7 @@
             "input": "apps/ui/public"
           }
         ],
-        "styles": [
-          "@angular/material/prebuilt-themes/azure-blue.css",
-          "apps/ui/src/styles.css"
-        ],
+        "styles": ["apps/ui/src/styles.scss", "apps/ui/src/themes.scss"],
         "scripts": []
       },
       "configurations": {
@@ -86,7 +83,7 @@
       "executor": "nx-stylelint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/ui/**/*.css"]
+        "lintFilePatterns": ["apps/ui/**/*.css", "apps/ui/**/*.scss"]
       }
     }
   }

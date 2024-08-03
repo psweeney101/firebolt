@@ -60,7 +60,7 @@ Demonstrating how to use Nx + DevContainers to get going
 
 - `nx add @nx/angular`
 - `nx generate @nx/angular:app apps/ui --backendProject api --e2eTestRunner none --setParserOptionsProject --strict`
-  - Which stylesheet format would you like to use? `css`
+  - Which stylesheet format would you like to use? `scss`
   - Which bundler do you want to use to build the application? `esbuild`
   - Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? `false`
 - Change port in `apps/ui/proxy.conf.json` to `3000`
@@ -76,8 +76,8 @@ Demonstrating how to use Nx + DevContainers to get going
 
 ### Lint
 
-- `npm i -D sort-package-json eslint-config-airbnb-typescript eslint-plugin-import nx-stylelint stylelint-config-idiomatic-order sort-package-json`
-- `nx generate nx-stylelint:configuration --project ui`
+- `npm i -D sort-package-json eslint-config-airbnb-typescript eslint-plugin-import nx-stylelint stylelint-config-standard-scss stylelint-config-idiomatic-order sort-package-json`
+- `nx generate nx-stylelint:configuration --project ui --scss`
 - Edit `.eslintrc.json` and `stylelintrc.json`
 - `nx run-many --targets lint,stylelint,format --fix`
 
@@ -101,7 +101,13 @@ Demonstrating how to use Nx + DevContainers to get going
 
 - `nx add @angular/material --project ui`
 - `npm install --save-dev material-icons`
-- Add `@import url('material-icons/iconfont/material-icons.css');` to `apps/ui/src/styles.css`
+- Add `@import url('material-icons/iconfont/material-icons.css');` to `apps/ui/src/styles.scss`
+
+## Contributing
+
+## Create a UI Component
+
+`nx generate @nx/angular:component apps/ui/src/app/path/to/component`
 
 ## Integrate with editors
 

@@ -1,0 +1,37 @@
+@use '@angular/material' as mat;
+@import 'material-icons/iconfont/material-icons.css';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.fill {
+  flex: 1;
+}
+
+@mixin app-colors($theme) {
+  background-color: var(--mat-app-background-color);
+
+  @if mat.get-theme-type($theme) == 'dark' {
+    --app-outline: #3d3d3d;
+  } @else {
+    --app-outline: #d8d8d8;
+  }
+
+  .primary-button {
+    @include mat.button-color($theme, $color-variant: primary);
+  }
+
+  .secondary-button {
+    @include mat.button-color($theme, $color-variant: secondary);
+  }
+
+  .tertiary-button {
+    @include mat.button-color($theme, $color-variant: tertiary);
+  }
+}
