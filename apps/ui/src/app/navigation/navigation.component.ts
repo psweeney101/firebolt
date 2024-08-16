@@ -18,4 +18,17 @@ import { TopnavComponent } from './topnav/topnav.component';
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
-export class NavigationComponent {}
+export class NavigationComponent {
+  /** Whether or not the sidenav is opened */
+  get sidenavOpened(): boolean {
+    return this._sidenavOpened;
+  }
+
+  /** Whether or not the sidenav is opened */
+  private _sidenavOpened = true;
+
+  /** Open or close the sidenav */
+  openSidenav(opened = !this.sidenavOpened): void {
+    this._sidenavOpened = opened;
+  }
+}

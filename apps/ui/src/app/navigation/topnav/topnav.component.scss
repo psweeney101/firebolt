@@ -1,13 +1,10 @@
+@use '@angular/material' as mat;
+
 mat-toolbar {
   position: fixed;
   z-index: 2;
   top: 0;
   height: inherit;
-  background: var(--mdc-filled-button-container-color);
-
-  * {
-    color: var(--mdc-filled-button-label-text-color);
-  }
 
   h1 {
     margin: 0;

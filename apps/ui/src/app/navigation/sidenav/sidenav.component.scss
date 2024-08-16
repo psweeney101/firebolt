@@ -7,7 +7,7 @@ mat-sidenav {
   min-width: fit-content;
   max-width: 200px;
   border-radius: 0;
-  border-right: 1px solid var(--app-outline);
+  box-shadow: var(--mat-app-elevation-shadow-level-4);
 }
 
 mat-nav-list {
