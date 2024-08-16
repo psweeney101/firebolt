@@ -99,15 +99,34 @@ Demonstrating how to use Nx + DevContainers to get going
 
 ### Add Angular Material
 
-- `nx add @angular/material --project ui`
+- `npm install --save @angular/material`
 - `npm install --save-dev material-icons`
-- Add `@import url('material-icons/iconfont/material-icons.css');` to `apps/ui/src/styles.scss`
+- Edit `styles.scss`, `themes.scss`, and `targets.build.styles` in `project.json`
+
+### Add TypeORM
+
+- `npm install --save @nestjs/typeorm typeorm mysql2`
+- Edit `app.module.ts`
 
 ## Contributing
 
 ## Create a UI Component
 
 `nx generate @nx/angular:component apps/ui/src/app/path/to/component`
+
+## Create a migration
+
+`npm run typeorm -- migration:create apps/api/src/app/migrations/migration-name`
+
+or
+
+`npm run typeorm -- migration:[generate, run, show, revert] apps/api/src/app/migrations/migration-name --dataSource apps/api/src/app/typeorm.module.ts`
+
+## Upgrade packages
+
+1. `nx migrate latest --interactive`
+2. `npm install` (or `npm upgrade`)
+3. `nx migrate --run-migrations`
 
 ## Integrate with editors
 

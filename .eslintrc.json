@@ -93,6 +93,7 @@
             "allowExpressions": true
           }
         ],
+        "@typescript-eslint/indent": "off",
         "@typescript-eslint/no-unused-vars": [
           "error",
           {

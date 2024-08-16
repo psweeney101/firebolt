@@ -1,1 +1,2 @@
-export * from './lib/shared';
+export * from './lib/entities';
+export * as entities from './lib/entities';
