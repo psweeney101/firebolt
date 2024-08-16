@@ -8,8 +8,12 @@ html {
 body {
   height: 100%;
   margin: 0;
+
+  --app-layout-padding: 12px;
+  --app-topnav-height: 56px;
 }
 
+/* Spacer element in a flex container */
 .fill {
   flex: 1;
 }

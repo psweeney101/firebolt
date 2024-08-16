@@ -1,5 +1,5 @@
 <mat-sidenav-container autosize>
-  <mat-sidenav mode="side" [opened]="opened" class="mat-elevation-z8">
+  <mat-sidenav mode="side" [opened]="opened">
     <mat-nav-list>
       @for (link of links; track link) {
       <a mat-list-item [routerLink]="link.href" [activated]="isActive(link)">

@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  height: calc(
+    100vh - var(--app-topnav-height) - (2 * var(--app-layout-padding))
+  );
+  flex-direction: column;
+
+  .filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: var(--app-layout-padding);
+
+    ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+      display: none;
+    }
+  }
+
+  .table-wrapper {
+    overflow: auto;
+    box-shadow: var(--mat-app-elevation-shadow-level-4);
+
+    th {
+      font-weight: bold;
+    }
+
+    tr.compact {
+      height: fit-content;
+    }
+
+    mat-paginator {
+      position: sticky;
+      bottom: 0;
+    }
+  }
+}

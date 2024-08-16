@@ -6,7 +6,7 @@
 }
 
 app-topnav {
-  height: 56px;
+  height: var(--app-topnav-height);
 }
 
 app-sidenav {
@@ -14,5 +14,5 @@ app-sidenav {
 }
 
 main {
-  padding: 12px;
+  padding: var(--app-layout-padding);
 }

@@ -1,8 +1,9 @@
 import { Route } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HomeComponent } from './home/home.component';
+import { FormComponent } from './form/form.component';
+import { TableComponent } from './table/table.component';
 
 export const appRoutes: Route[] = [
-  { path: '', pathMatch: 'full', component: HomeComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  { path: 'table', component: TableComponent },
+  { path: 'form', component: FormComponent },
+  { path: '**', redirectTo: '/table' },
 ];

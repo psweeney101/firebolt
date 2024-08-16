@@ -1,22 +1,24 @@
 <mat-toolbar class="primary">
   <button
     mat-icon-button
-    (click)="openSidenav.emit(!this.sidenavOpened)"
-    [@rotatedState]="sidenavOpened"
+    (click)="sidenavOpened.set(!this.sidenavOpened())"
+    [@rotatedState]="sidenavOpened()"
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <h1 class="mat-headline-large">Firebolt</h1>
+  <h1 class="mat-headline-large">
+    <a href="/">Firebolt</a>
+  </h1>
   <span class="fill"></span>
   <button
-    *ngIf="themeService.theme === Theme.DARK"
+    *ngIf="themeService.theme() === Theme.DARK"
     mat-icon-button
     (click)="themeService.setTheme(Theme.LIGHT)"
   >
     <mat-icon>light_mode</mat-icon>
   </button>
   <button
-    *ngIf="themeService.theme === Theme.LIGHT"
+    *ngIf="themeService.theme() === Theme.LIGHT"
     mat-icon-button
     (click)="themeService.setTheme(Theme.DARK)"
   >

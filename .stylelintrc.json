@@ -6,7 +6,13 @@
       "extends": ["stylelint-config-idiomatic-order"],
       "rules": {
         "color-hex-length": "long",
-        "no-empty-source": null
+        "no-empty-source": null,
+        "selector-pseudo-element-no-unknown": [
+          true,
+          {
+            "ignorePseudoElements": ["ng-deep"]
+          }
+        ]
       }
     },
     {

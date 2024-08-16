@@ -1,8 +1,5 @@
-<app-topnav
-  [sidenavOpened]="sidenavOpened"
-  (openSidenav)="openSidenav($event)"
-></app-topnav>
-<app-sidenav [opened]="sidenavOpened">
+<app-topnav [sidenavOpened]="sidenavOpened"></app-topnav>
+<app-sidenav [opened]="sidenavOpened()">
   <main>
     <router-outlet></router-outlet>
   </main>

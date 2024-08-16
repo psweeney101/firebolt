@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 export enum Theme {
   DARK = 'dark',
@@ -9,13 +9,11 @@ export enum Theme {
   providedIn: 'root',
 })
 export class ThemeService {
-  /** The currently applied theme */
-  get theme(): Theme {
-    return this._theme;
-  }
+  /** The currently applied theme, managed by this component */
+  private managedTheme = signal(this.getThemeFromDOM());
 
-  /** Controlled by the mutation observer */
-  private _theme = Theme.DARK;
+  /** The currently applied theme */
+  readonly theme = this.managedTheme.asReadonly();
 
   constructor() {
     // Watch for changes to the body's theme attribute
@@ -25,17 +23,21 @@ export class ThemeService {
           mutation.type === 'attributes' &&
           mutation.attributeName === 'theme'
         ) {
-          this._theme =
-            document.body.getAttribute('theme') === Theme.LIGHT
-              ? Theme.LIGHT
-              : Theme.DARK;
+          this.managedTheme.set(this.getThemeFromDOM());
         }
       });
     }).observe(document.body, { attributes: true });
   }
 
-  /** Updates the theme */
+  /** Sets the theme */
   setTheme(theme: Theme): void {
-    document.body.setAttribute('theme', theme);
+    return document.body.setAttribute('theme', theme);
+  }
+
+  /** Reads the theme from the DOM */
+  private getThemeFromDOM(): Theme {
+    return document.body.getAttribute('theme') === Theme.LIGHT
+      ? Theme.LIGHT
+      : Theme.DARK;
   }
 }

@@ -24,8 +24,8 @@ export class SidenavComponent {
 
   /** List of links */
   readonly links: { name: string; icon: string; href: string }[] = [
-    { name: 'Home', icon: 'home', href: '/' },
-    { name: 'Dashboard', icon: 'widgets', href: '/dashboard' },
+    { name: 'Table', icon: 'table_chart', href: '/table' },
+    { name: 'Form', icon: 'edit_note', href: '/form' },
   ];
 
   constructor(private router: Router) {}

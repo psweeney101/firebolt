@@ -6,7 +6,7 @@ import {
   trigger,
 } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -29,10 +29,7 @@ import { Theme, ThemeService } from '../../services/theme.service';
 })
 export class TopnavComponent {
   /** Whether or not the sidenav is opened */
-  @Input() sidenavOpened = true;
-
-  /** Fires when the sidenav should be closed or opened */
-  @Output() openSidenav = new EventEmitter<boolean>();
+  @Input() sidenavOpened = signal(false);
 
   Theme = Theme;
 

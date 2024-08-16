@@ -68,12 +68,6 @@
             "allow": ["error", "info", "warn"]
           }
         ],
-        "no-underscore-dangle": [
-          "error",
-          {
-            "allowAfterThis": true
-          }
-        ],
         "no-unused-vars": "off",
         "require-await": "error"
       }
