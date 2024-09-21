@@ -31,7 +31,7 @@
     "@fontsource/raleway": "^5.0.19",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
-    "@nestjs/platform-express": "^10.0.2",
+    "@nestjs/platform-express": "^10.4.3",
     "@nestjs/typeorm": "^10.0.2",
     "csv-parse": "^5.5.6",
     "material-icons": "^1.13.12",
